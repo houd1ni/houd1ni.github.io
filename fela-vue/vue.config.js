@@ -1,5 +1,5 @@
 // vue.config.js
 module.exports = {
   // options...
-  publicPath: '/dist/'
+  publicPath: '/fela-vue/dist/'
 }
