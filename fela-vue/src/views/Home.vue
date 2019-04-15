@@ -1,5 +1,16 @@
 <template>
   <div :class="f('root')">
+    <p>
+      This documentation currently is in development.
+      <br />
+      See more in the <a href="https://github.com/houd1ni/fela-vue">Repo.</a>
+      <br />
+      And
+      <a href="https://github.com/houd1ni/houd1ni.github.io/tree/master/fela-vue">
+        this site Repo
+      </a>
+      as a live example.
+    </p>
     <DocSectors :data="sectors" />
   </div>
 </template>
@@ -16,19 +27,23 @@ export default {
   data() {
     return {
       sectors: [
-        { code: 'alert(5)', docs: 'shit!' }
+        { code: `
+          computed: {
+            style() {
+              return {
+                root: {
+                  marginLeft: 45
+                }
+              }
+            }
+          }
+        `, docs: 'it\'s valid!' },
+        {
+          code: 'css`.root { margin-left: 45 }`',
+          docs: 'it\'s also valid!'
+        }
       ]
     }
-  },
-  async mounted() {
-    //  monaco.editor.create(this.$refs.cm, {
-    //    value: [
-    //      'function x() {',
-    //      '\tconsole.log("Hello world!");',
-    //      '}'
-    //    ].join('\n'),
-    //    language: 'javascript'
-    //  });
   },
   computed: {
     style() {

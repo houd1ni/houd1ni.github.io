@@ -17,8 +17,6 @@ import Sector from '@/com/Sector'
 import marked from 'marked'
 import * as monaco from 'monaco-editor'
 
-console.log({marked})
-
 export default {
   props: {
     data: { type: Array, required: true },
@@ -45,7 +43,7 @@ export default {
           min-height 200
         }
         .docs {
-          
+
         }
       `
     }

@@ -1,10 +1,10 @@
 <template>
   <div :class="f('root')">
     <div :class="f('wrapper')">
-      <div :class="f('nav')">
+      <!-- <div :class="f('nav')">
         <router-link to="/">Home</router-link> |
         <router-link to="/about">About</router-link>
-      </div>
+      </div> -->
       <div :class="f('body')">
         <router-view/>
       </div>
